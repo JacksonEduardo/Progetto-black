@@ -1,0 +1,190 @@
+/* color and font var */
+:root{
+    --mainTitle:  #2B9DF4;
+    --font:'Orbitron', sans-serif;
+    --secondaryText: white;
+    --second-font: 'Jura', sans-serif;
+}
+
+.title{
+    font-family: var(--font);
+    color: var(--mainTitle);
+}
+
+.text{
+    font-family: var(--second-font);
+    color:var(--secondaryText);
+}
+
+.number{
+    font-family: var(--second-font);
+    color: var(--secondaryText);
+}
+/* BODY */
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/* NAV BAR */
+.color_moon{
+    color: var(--secondaryText);
+}
+
+.border_bottom{
+    border-bottom: solid 2px white;
+}
+
+/* TITTLE WITH MOON */
+#moon_background{
+    background-image: linear-gradient(rgba(0, 8, 37, 0.459), rgb(0, 0, 0)   ), url(./media/moon.jpg);
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+@media screen and (max-width: 600px){
+    #moon_background{
+        background-size: cover;
+        background-position: center;
+        height: 91vh;
+    }
+}
+
+.title_text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title_font{
+    font-size: 45px;
+}
+
+.text_description{
+    font-size: 90%;
+}
+
+.arrow_down{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 250px;
+    color: var(--mainTitle);
+}
+
+/* 4 CARD WITH NUMBER */
+ .custom_card{
+    width: 100%;
+    height: 70px;
+    border-bottom: solid 2px var(--mainTitle);
+ }
+
+ .size_font{
+    font-size: 10px;
+ }
+
+ /* MOON WITH TEXT */
+ .image_moon_text{
+    height: 600px;
+    display: flex;
+    align-items: center;
+ }
+ .image_moon{
+    height: 500px;
+    background-image: url(./media/moon2.jpg);
+    background-size:120%;
+    background-repeat: no-repeat;
+    
+ }
+
+
+ 
+ @media screen and (max-width: 600px){
+    .image_moon{
+        height: 250px;
+    }
+}
+
+/* FIVE CARDS */
+.card_custom{
+    border-bottom: solid 2px var(--mainTitle);
+}
+
+.font_card{
+    font-size: 12px;
+}
+
+/* ROCKET AND CARDS */
+.font_rocket_cards{
+    font-size: 15px;
+}
+
+.cards_rocket{
+    height: 100vh;
+}
+
+.rocket{
+    height: 100vh;
+    background-image: url(./media/missile-2027068_1280.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* CARD WITH BUTTOM */
+.container_card_buttom{
+    height: 80vh;
+}
+.container_buttom{
+    position: relative;
+}
+
+.buttom_custom{
+    width: 100px;
+    height: 37px;
+    border: solid 2px var(--mainTitle);
+    align-items: end;
+    right: 0;
+    font-size: 14px;
+
+}
+
+.text_buttom{
+    font-size: 15px;
+}
+
+/* PLANET BEFORE FOOTER */
+#planet_sunrise{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgb(0, 0, 0)30%, rgba(255, 255, 0, 0), rgb(0, 0, 0)100% ), url(./media/sunrise-1765027_1920.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+
+/* #moon_background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.252)   ), url(./media/moon.jpg);
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+} */
+
+/* FOOTER */
+#footer_end{
+    width: 100%;
+    height: 30vh;
+}
+#final_line{
+    width: 50vw;
+    height: 5px;
+    /* background-image: linear-gradient(90deg, red 10%, yellow 10%);
+    background-color: var(--mainTitle); */
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.80015756302521) 0%, rgba(0,106,255,1) 50%, rgba(0,0,0,0.8) 100%);
+
+}
